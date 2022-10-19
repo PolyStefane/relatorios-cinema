@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Relatórios</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            color:white;
+            text-align: center;
+        }
+        .container{
+            color: black;
+            background-color: rgb(243, 236, 174);
+            border: 2px solid red;
+        }
+        body{
+            text-align: center;
+            background-image: url(img/sala1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        table{
+            margin: auto;
+            width: 800px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid;
+        }
+        tr.cor{
+            background-color: rgb(194, 60, 60);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cabeçalho">
+    <h1> Página de Relatórios </h1>
+    </div>
+    <div class="container">
+        <div class="Registro">
+            <p><b>Formulário de Entrada dos campos referente aos relatórios:</b></p>
+            <form>
+            <input type="submit" value="Incluir"><br><br>
+
+            <label for="ipRelatorio">Registro do Relatório </label>
+            <input id="ipRelatorio" type="text" name="ipRelatorio">
+            <input type="reset" value="Excluir"> <br> <br>
+
+
+            <label for="ipRegistroRelatorio">Registro do Relatório a alterar</label>
+            <input id="ipRegistroRelatorio" type="text" name="ipRegistroRelatorio">
+            <input type="submit" value="Alterar">
+            <input type="submit" value="Salvar Alteração"><br><br>
+        </div>
+        <div class="Filtro">
+            <p><b>Filtro</b></p>
+            <label for="ipListar">Registro do Relatório </label>
+            <input id="ipListar" type="text" name="ipListar">
+            <input type="reset" value="Excluir"> <br><br>
+        
+        </div>
+
+        <div class="Exibicao">
+            <p><b>Tipo de exibição</b></p>
+            <label for="ipExibicao">Registro do Tipo de Exibição </label>
+            <input id="ipExibicao" type="text" name="ipExibicao"> <br><br>
+        </div>
+
+        <div class="Capacidade">
+            <p><b>Capacidade</b></p>
+            <label for="ipCapacidade">Registro da Capacidade </label>
+            <input id="ipCapacidade" type="text" name="ipCapacidade"> <br><br>
+        </div>
+
+        <div class="Ano_Filme">
+            <p><b>Filmes por ano de lançamento</b></p>
+            <label type="ipAnosFilmes_1"></label>
+            <input type="number" ip="ipAnosFilmes_1">
+            entre 
+            <label type="ipAnosFilmes_2"></label>
+            <input type="number" ip="ipAnosFilmes_2"> 
+            <button type="button">Filtrar</button> <br><br>
+        </div>
+
+        <div class="Data_Sessao">
+            <p><b>Exibição das sessões pelas datas</b></p>
+            <label type="ipSessao_Data1"></label>
+            <input type="number" ip="ipSessao_Data1">
+            entre 
+            <label type="ipSessao_Data2"></label>
+            <input type="number" ip="ipSessao_Data2"> 
+            <button type="button">Filtrar</button> <br><br><br>
+
+        </div>
+            </form>
+        
+        <table> 
+            <tr class="cor">
+                <td><b>Código do Filme</b></td>
+                <td><b>Nome do Filme</b></td>
+                <td><b>Atores</b></td>
+                <td><b>Código da Sala</b></td>
+                <td><b>Nome da sala</b></td>
+            </tr>
+            <tr>
+                <td>111-111</td>
+                <td>Mad Max: Estrada da Fúria</td>
+                <td>Tom Hardy; Charlize Theron; Zoe Kravitz</td>
+                <td>XXX-XXX</td>
+                <td>Sala 1</td>
+            </tr>
+            <tr>
+                <td>222-222</td>
+                <td>Star Wars: Episódio IX</td>
+                <td>Daisy Ridley; Adam Driver; Oscar Isaac</td>
+                <td>YYY-YYY</td>
+                <td>Sala 2</td>
+            </tr>
+        </table>
+        <br> 
+
+
+
+
+    </div>
+    
+</body>
+</html>
